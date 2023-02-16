@@ -1,0 +1,20 @@
+[
+    {
+        "id":1,
+        "image":"https://thumbs.dreamstime.com/b/pizza-rustic-italian-mozzarella-cheese-basil-leaves-35669930.jpg",
+        "title":"La Pino'z Pizza",
+        "description":"pizza, dish of Italian origin consisting of a flattened disk of bread dough topped with some combination of olive oil, oregano, tomato, olives, mozzarella or other cheese"
+    },
+    {
+        "id":2,
+        "image":"https://cdn.britannica.com/08/177308-050-94D9D6BE/Food-Pizza-Basil-Tomato.jpg",
+        "title":"Gusto Pizzeria",
+        "description":"focaccia, traditional Italian bread with many variations.A precursor of pizza, focaccia is one of Italy’s most ancient breads. It is thought to have"
+    },
+    {
+        "id":3,
+        "image":"https://www.foodandwine.com/thmb/Wd4lBRZz3X_8qBr69UOu2m7I2iw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/classic-cheese-pizza-FT-RECIPE0422-31a2c938fc2546c9a07b7011658cfd05.jpg",
+        "title":"Squares Pizza & Cafe",
+        "description":"meringue, mixture of stiffly beaten egg whites and sugar that is used in confections and desserts. The invention of meringue in 1720 is attributed to a Swiss pastry cook named Gasparini."
+    }
+]

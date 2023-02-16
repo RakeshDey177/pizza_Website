@@ -1,23 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Routes,Route } from "react-router-dom";
+import React,{useState}  from "react";
+import { GlobalStyle } from "./GlobalStyle";
+import Cart from "./componensts/cart/Cart";
+import Home from "./componensts/Home/Home";
+import Pizza from "./componensts/Pizzas/Pizza";
+import Footer from "./componensts/Footer/Footer"
+import Navbar from "./componensts/Navbar/Navbar";
+import Sidebar from "./componensts/Sidebar/Sidebar";
+import store from "./app/store";
+import { Provider } from "react-redux";
 
 function App() {
+
+  const [isOpen,setIsOpen] =useState(false);
+
+  const toggle =()=>{
+    setIsOpen(!isOpen);
+  }
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Provider store={store}>
+    <Router>
+    <GlobalStyle/>
+    <Navbar toggle={toggle}/> 
+    <Sidebar isOpen={isOpen} toggle={toggle}/>
+    <Routes>
+    <Route exact path="/" element={<Home/>}/>
+    <Route exact path="/cart" element={<Cart/>}/>
+    <Route exact path="/pizzas" element={<Pizza/>}/>
+    </Routes>
+    <Footer/>
+    </Router>
+    </Provider>
     </div>
   );
 }
